@@ -19,13 +19,14 @@
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
+		<engine name="cordova-ios" version=">=3.8.0" />
     </engines>
 
     <!-- js -->
     <js-module src="www/auto-start.js" name="AutoStart">
         <clobbers target="cordova.plugins.autoStart" />
     </js-module>
-
+	
     <!-- android -->
     <platform name="android">
 
