@@ -69,7 +69,7 @@
     </platform>
 
     <!-- macOS -->
-    <platform name="osx">
+    <platform name="ios">
         <config-file target="config.xml" parent="/*">
           <feature name="AutoStart">
             <param name="ios-package" value="AutoStart" />
