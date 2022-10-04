@@ -81,7 +81,7 @@
         <source-file src="src/osx/Autostart.swift" />
         <framework src="ServiceManagement.framework" />
 
-        <dependency id="cordova-plugin-swift-support" version="~3.1.1"/>
+        <!-- <dependency id="cordova-plugin-swift-support" version="~3.1.1"/> -->
     </platform>
 
 </plugin>
