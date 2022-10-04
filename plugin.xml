@@ -19,7 +19,6 @@
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
-		<engine name="cordova-ios" version=">=3.8.0" />
     </engines>
 
     <!-- js -->
@@ -70,7 +69,7 @@
     </platform>
 
     <!-- macOS -->
-    <platform name="ios">
+    <platform name="osx">
         <config-file target="config.xml" parent="/*">
           <feature name="AutoStart">
             <param name="ios-package" value="AutoStart" />
@@ -81,7 +80,7 @@
         <source-file src="src/osx/Autostart.swift" />
         <framework src="ServiceManagement.framework" />
 
-        <!-- <dependency id="cordova-plugin-swift-support" version="~3.1.1"/> -->
+        <dependency id="cordova-plugin-swift-support" version="~3.1.1"/>
     </platform>
 
 </plugin>

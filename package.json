@@ -5,7 +5,7 @@
   "cordova": {
     "id": "cordova-plugin-autostart",
     "platforms": [
-      "android","ios"
+      "android"
     ]
   },
   "repository": {
@@ -21,11 +21,7 @@
     {
       "name": "cordova",
       "version": ">=3.0.0"
-    },
-	{
-      "name": "cordova-ios",
-      "version": ">=3.8.0"		
-	}
+    }
   ],
   "author": "Toni Korin",
   "license": "Apache 2.0",
