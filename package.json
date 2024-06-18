@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-autostart",
   "version": "2.3.1",
-  "description": "\r\n        The application will be automatically started after the every boot and the automatic update of your application. \r\n        You can enable or disable the autostart function in your app.\r\n    ",
+  "description": "forded from https://github.com/ToniKorin/cordova-plugin-autostart \r\n        The application will be automatically started after the every boot and the automatic update of your application. \r\n        You can enable or disable the autostart function in your app.\r\n    ",
   "cordova": {
     "id": "cordova-plugin-autostart",
     "platforms": [
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ToniKorin/cordova-plugin-autostart.git"
+    "url": "https://github.com/alindzon/cordova-plugin-autostart.git"
   },
   "keywords": [
     "autostart",
@@ -26,7 +26,8 @@
   "author": "Toni Korin",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/ToniKorin/cordova-plugin-autostart/issues"
+    "url": "https://github.com/alindzon/cordova-plugin-autostart/issues"
   },
-  "homepage": "https://github.com/ToniKorin/cordova-plugin-autostart"
+  "homepage": "https://github.com/alindzon/cordova-plugin-autostart",
+  "types": "index.d.ts"
 }
