@@ -20,7 +20,7 @@ This [Cordova][cordova] plugin will start automatically your __Android__ app or 
     </application>
   ```
 - 4 - user must grant Appear on Top permission (having trouble getting this to happen from the app - let me know if you have that working)  Without this permission the app loads and then immediatlely is terminated.  My app is not a service, it needs to be active to get connected etc..
- - 5 - app.component.ts added code to move the app to the foreground on startup
+ - 5 - project app.component.ts edited as follows with added code to move the app to the foreground on startup
 ```
 import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
