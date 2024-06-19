@@ -6,9 +6,9 @@ This [Cordova][cordova] plugin will start automatically your __Android__ app or 
 - __macOS__
 
 ## notes about this fork ##
-1 - no attention paid to macos, only using it for android
-2 - added index.d.ts to allow typescript to work specifically wanted it to work with Capacitor
-3 - project AndroidaManifest.xml needed these changes to get rid of an execution errro
+- 1 - no attention paid to macos, only using it for android
+- 2 - added index.d.ts to allow typescript to work specifically wanted it to work with Capacitor
+- 3 - project AndroidaManifest.xml needed these changes to get rid of an execution errro
   <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
   <application ...
           <receiver android:name="com.tonikorin.cordova.plugin.autostart.UserPresentReceiver" android:exported="true" tools:replace="android:exported">
@@ -17,8 +17,8 @@ This [Cordova][cordova] plugin will start automatically your __Android__ app or 
             </intent-filter>
         </receiver>
     </application>
-  4 - user must grant Appear on Top permission (having trouble getting this to happen from the app - let me know if you have that working)  Without this permission the app loads and then immediatlely is terminated.  My app is not a service, it needs to be active to get connected etc..
-  5 - app.component.ts added code to move the app to the foreground on startup
+  - 4 - user must grant Appear on Top permission (having trouble getting this to happen from the app - let me know if you have that working)  Without this permission the app loads and then immediatlely is terminated.  My app is not a service, it needs to be active to get connected etc..
+  - 5 - app.component.ts added code to move the app to the foreground on startup
   import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 
