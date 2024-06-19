@@ -1,4 +1,8 @@
 ## ChangeLog
+### Version 2.4.0 (19.6.2024)
+- by Andrew Lindzon CTO Efficient Apps Inc.
+- added typescript compatibility to allow use with capacitor see README.md
+
 #### Version 2.3.0 (28.2.2018)
 - Added support for starting a [macOS][pull24] launcher application on boot
 
