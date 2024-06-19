@@ -5,6 +5,40 @@ This [Cordova][cordova] plugin will start automatically your __Android__ app or 
 - __Android__
 - __macOS__
 
+## notes about this fork ##
+1 - no attention paid to macos, only using it for android
+2 - added index.d.ts to allow typescript to work specifically wanted it to work with Capacitor
+3 - project AndroidaManifest.xml needed these changes to get rid of an execution errro
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <application ...
+          <receiver android:name="com.tonikorin.cordova.plugin.autostart.UserPresentReceiver" android:exported="true" tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+  4 - user must grant Appear on Top permission (having trouble getting this to happen from the app - let me know if you have that working)  Without this permission the app loads and then immediatlely is terminated.  My app is not a service, it needs to be active to get connected etc..
+  5 - app.component.ts added code to move the app to the foreground on startup
+  import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
+
+declare let cordova: any;
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
+})
+export class AppComponent {
+  constructor(private platform: Platform) {
+    this.platform.ready().then(() => {
+      cordova.plugins.backgroundMode.enable();
+      cordova.plugins.backgroundMode.unlock();
+      cordova.plugins.backgroundMode.moveToForeground();
+  }
+  ,(err) => {console.log('Error moving to the foreground',err)})}
+}
+
+
 ## Usage ##
 
 #### Enable the automatic startup of your app after the boot ####
